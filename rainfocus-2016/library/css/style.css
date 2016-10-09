@@ -1,7 +1,7 @@
 /*! Made with Bones: http://themble.com/bones :) */
 /******************************************************************
-Site Name:
-Author:
+Site Name: RainFocus
+Author: RamirezDev
 
 Stylesheet: Main Stylesheet
 
@@ -540,8 +540,8 @@ span.amp {
 }
 
 /******************************************************************
-Site Name:
-Author:
+Site Name: RainFocus
+Author: RamirezDev
 
 Stylesheet: Variables
 
@@ -562,8 +562,8 @@ use color variables properly:
 http://sachagreif.com/sass-color-variables/
 */
 /******************************************************************
-Site Name:
-Author:
+Site Name: RainFocus
+Author: RamirezDev
 
 Stylesheet: Typography
 
@@ -611,7 +611,7 @@ I've edited it a bit, but it's a nice starting point.
 some nice typographical defaults
 more here: http://www.newnet-soft.com/blog/csstypography
 */
-/* line 65, ../scss/partials/_typography.scss */
+/* line 67, ../scss/partials/_typography.scss */
 p {
   -ms-word-wrap: break-word;
   word-break: break-word;
@@ -630,8 +630,8 @@ p {
 }
 
 /******************************************************************
-Site Name:
-Author:
+Site Name: RainFocus
+Author: RamirezDev
 
 Stylesheet: Sass Functions
 
@@ -675,8 +675,8 @@ both compile to:
 width: 65%;
 *********************/
 /******************************************************************
-Site Name:
-Author:
+Site Name: RainFocus
+Author: RamirezDev
 
 Stylesheet: Mixins Stylesheet
 
@@ -717,8 +717,8 @@ BOX SIZING
 /* NOTE: value of "padding-box" is only supported in Gecko. So
 probably best not to use it. I mean, were you going to anyway? */
 /******************************************************************
-Site Name:
-Author:
+Site Name: RainFocus
+Author: RamirezDev
 
 Stylesheet: Grid Stylesheet
 
@@ -1035,8 +1035,8 @@ I mean, you can do whatever you want. The world is your oyster. Unless
 you hate oysters, then the world is your peanut butter & jelly sandwich.
 *********************/
 /******************************************************************
-Site Name:
-Author:
+Site Name: RainFocus
+Author: RamirezDev
 
 Stylesheet: Alert Styles
 
@@ -1076,8 +1076,8 @@ you can just remove this stylesheet.
 }
 
 /******************************************************************
-Site Name:
-Author:
+Site Name: RainFocus
+Author: RamirezDev
 
 Stylesheet: Button Styles
 
@@ -1147,8 +1147,8 @@ and it will create a button dependant on those variables.
 }
 
 /******************************************************************
-Site Name:
-Author:
+Site Name: RainFocus
+Author: RamirezDev
 
 Stylesheet: Form Styles
 
@@ -1460,8 +1460,8 @@ you set a great foundation, you won't need to add too many styles in
 the other stylesheets. Remember, keep it light: Speed is Important.
 *********************/
 /******************************************************************
-Site Name:
-Author:
+Site Name: RainFocus
+Author: RamirezDev
 
 Stylesheet: Base Mobile Stylesheet
 
@@ -1476,7 +1476,7 @@ GENERAL STYLES
 *********************/
 /* line 18, ../scss/breakpoints/_base.scss */
 body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
   color: #5c6b80;
@@ -2153,8 +2153,8 @@ tweeners.
 *********************/
 @media only screen and (min-width: 481px) {
   /******************************************************************
-  Site Name:
-  Author:
+  Site Name: RainFocus
+  Author: RamirezDev
   
   Stylesheet: 481px and Up Stylesheet
   
@@ -2249,8 +2249,8 @@ you can add resource intensive styles.
 *********************/
 @media only screen and (min-width: 768px) {
   /******************************************************************
-  Site Name:
-  Author:
+  Site Name: RainFocus
+  Author: RamirezDev
   
   Stylesheet: Tablet & Small Desktop Stylesheet
   
@@ -2427,8 +2427,8 @@ you can add resource intensive styles.
 *********************/
 @media only screen and (min-width: 1030px) {
   /******************************************************************
-  Site Name:
-  Author:
+  Site Name: RainFocus
+  Author: RamirezDev
   
   Stylesheet: Desktop Stylsheet
   
@@ -2448,8 +2448,8 @@ This is for the larger monitors and possibly full screen viewers.
 *********************/
 @media only screen and (min-width: 1240px) {
   /******************************************************************
-  Site Name: 
-  Author: 
+  Site Name: RainFocus
+  Author: RamirezDev
   
   Stylesheet: Super Large Monitor Stylesheet
   
@@ -2466,8 +2466,8 @@ query for retina AND a certain size if you want. Go Nuts.
 *********************/
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /******************************************************************
-  Site Name: 
-  Author: 
+  Site Name: RainFocus
+  Author: RamirezDev
   
   Stylesheet: Retina Screens & Devices Stylesheet
   
@@ -2514,8 +2514,8 @@ be set to display none.
 *********************/
 @media print {
   /******************************************************************
-  Site Name:
-  Author:
+  Site Name: RainFocus
+  Author: RamirezDev
   
   Stylesheet: Print Stylesheet
   
