@@ -290,12 +290,12 @@ NAVIGATION STYLES
 }
 /* line 44, ../scss/breakpoints/_768up.scss */
 .nav ul {
-  background: #323944;
+  background: #000;
   margin-top: 0;
 }
 /* line 48, ../scss/breakpoints/_768up.scss */
 .nav li {
-  float: left;
+  float: right;
   position: relative;
   /*
   plan your menus and drop-downs wisely.
