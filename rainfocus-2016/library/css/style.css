@@ -2403,12 +2403,12 @@ FOOTER STYLES
   margin-bottom: 15px;
 }
 /* line 1115, ../scss/breakpoints/_base.scss */
-.footer .demo-button-holde {
+.footer .demo-button-holder {
   text-align: center;
   display: inline-block;
 }
 /* line 1117, ../scss/breakpoints/_base.scss */
-.footer .demo-button-holde .footer-demo-bttn {
+.footer .demo-button-holder .footer-demo-bttn {
   border-radius: 34px;
   border: solid 3px #e13a5d;
   color: #ffffff !important;
