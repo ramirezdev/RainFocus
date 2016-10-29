@@ -664,7 +664,17 @@ body#tinymce.wp-editor span.amp {
   font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
   font-style: italic;
 }
-/* line 67, ../scss/partials/_typography.scss */
+@font-face {
+  /* line 17, ../scss/editor-style.scss */
+  body#tinymce.wp-editor {
+    font-family: 'Montserrat-Light';
+    src: url("http://www.ramirezdev.com/rainfocus/wp-content/themes/rainfocus-2016/library/fonts/Montserrat-Light.eot");
+    src: url("http://www.ramirezdev.com/rainfocus/wp-content/themes/rainfocus-2016/library/fonts/Montserrat-Light.eot?#iefix") format("embedded-opentype"), url("http://www.ramirezdev.com/rainfocus/wp-content/themes/rainfocus-2016/library/fonts/Montserrat-Light.woff") format("woff"), url("http://www.ramirezdev.com/rainfocus/wp-content/themes/rainfocus-2016/library/fonts/Montserrat-Light.ttf") format("truetype"), url("http://www.ramirezdev.com/rainfocus/wp-content/themes/rainfocus-2016/library/fonts/Montserrat-Light.svg#Montserrat-Light") format("svg");
+    font-weight: 300;
+    font-style: normal;
+  }
+}
+/* line 77, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor p {
   -ms-word-wrap: break-word;
   word-break: break-word;

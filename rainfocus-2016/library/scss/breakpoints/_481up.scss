@@ -99,6 +99,23 @@ POSTS & CONTENT STYLES
 		clear: both;
 	}
 
+	.main-text-section {
+		.icons-holder {
+    		top: -80px;
+    		-ms-transform: scale(.75, .75);
+			-webkit-transform: scale(.75, .75);
+			transform: scale(.75, .75);
+		}
+		.dawn-of-living {
+			top:340px;
+		}
+		.where-data-isnt {
+		    top:320px;
+
+				    
+		}
+	}
+
 } /* end .entry-content */
 
 /*********************

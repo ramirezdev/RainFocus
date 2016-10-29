@@ -76,6 +76,13 @@ FONT FACE (IN YOUR FACE)
       font-style: normal;
   }
 */
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url("http://www.ramirezdev.com/rainfocus/wp-content/themes/rainfocus-2016/library/fonts/Montserrat-Light.eot");
+  src: url("http://www.ramirezdev.com/rainfocus/wp-content/themes/rainfocus-2016/library/fonts/Montserrat-Light.eot?#iefix") format("embedded-opentype"), url("http://www.ramirezdev.com/rainfocus/wp-content/themes/rainfocus-2016/library/fonts/Montserrat-Light.woff") format("woff"), url("http://www.ramirezdev.com/rainfocus/wp-content/themes/rainfocus-2016/library/fonts/Montserrat-Light.ttf") format("truetype"), url("http://www.ramirezdev.com/rainfocus/wp-content/themes/rainfocus-2016/library/fonts/Montserrat-Light.svg#Montserrat-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
 /*
 The following is based of Typebase:
 https://github.com/devinhunt/typebase.css
@@ -89,7 +96,7 @@ I've edited it a bit, but it's a nice starting point.
 some nice typographical defaults
 more here: http://www.newnet-soft.com/blog/csstypography
 */
-/* line 67, ../scss/partials/_typography.scss */
+/* line 77, ../scss/partials/_typography.scss */
 p {
   -ms-word-wrap: break-word;
   word-break: break-word;
@@ -241,6 +248,21 @@ POSTS & CONTENT STYLES
   display: block;
   clear: both;
 }
+/* line 103, ../scss/breakpoints/_481up.scss */
+.entry-content .main-text-section .icons-holder {
+  top: -80px;
+  -ms-transform: scale(0.75, 0.75);
+  -webkit-transform: scale(0.75, 0.75);
+  transform: scale(0.75, 0.75);
+}
+/* line 109, ../scss/breakpoints/_481up.scss */
+.entry-content .main-text-section .dawn-of-living {
+  top: 340px;
+}
+/* line 112, ../scss/breakpoints/_481up.scss */
+.entry-content .main-text-section .where-data-isnt {
+  top: 320px;
+}
 
 /* end .entry-content */
 /*********************
@@ -278,22 +300,28 @@ LAYOUT & GRID STYLES
 /*********************
 HEADER STYLES
 *********************/
+/* line 36, ../scss/breakpoints/_768up.scss */
+.header #inner-header #header-logo {
+  position: static;
+}
+
 /*********************
 NAVIGATION STYLES
 *********************/
-/* line 42, ../scss/breakpoints/_768up.scss */
+/* line 49, ../scss/breakpoints/_768up.scss */
 .nav {
   border: 0;
+  display: block;
   /* end .menu ul li */
   /* highlight current page */
   /* end current highlighters */
 }
-/* line 44, ../scss/breakpoints/_768up.scss */
+/* line 53, ../scss/breakpoints/_768up.scss */
 .nav ul {
   background: #000;
   margin-top: 0;
 }
-/* line 48, ../scss/breakpoints/_768up.scss */
+/* line 57, ../scss/breakpoints/_768up.scss */
 .nav li {
   float: right;
   position: relative;
@@ -302,7 +330,7 @@ NAVIGATION STYLES
   */
   /* showing sub-menus */
 }
-/* line 52, ../scss/breakpoints/_768up.scss */
+/* line 61, ../scss/breakpoints/_768up.scss */
 .nav li a {
   border-bottom: 0;
   /*
@@ -310,12 +338,12 @@ NAVIGATION STYLES
   has the possibility of being a mobile device.
   */
 }
-/* line 59, ../scss/breakpoints/_768up.scss */
+/* line 68, ../scss/breakpoints/_768up.scss */
 .nav li a:hover, .nav li a:focus {
   color: #fff;
   text-decoration: underline;
 }
-/* line 71, ../scss/breakpoints/_768up.scss */
+/* line 80, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu,
 .nav li ul.children {
   margin-top: 0;
@@ -326,7 +354,7 @@ NAVIGATION STYLES
   z-index: 8999;
   /* highlight sub-menu current page */
 }
-/* line 80, ../scss/breakpoints/_768up.scss */
+/* line 89, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li,
 .nav li ul.children li {
   /*
@@ -335,7 +363,7 @@ NAVIGATION STYLES
   for usability. k, bai.
   */
 }
-/* line 82, ../scss/breakpoints/_768up.scss */
+/* line 91, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li a,
 .nav li ul.children li a {
   padding-left: 10px;
@@ -344,18 +372,18 @@ NAVIGATION STYLES
   width: 180px;
   border-bottom: 1px solid #ccc;
 }
-/* line 99, ../scss/breakpoints/_768up.scss */
+/* line 108, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li:last-child a,
 .nav li ul.children li:last-child a {
   border-bottom: 0;
 }
-/* line 109, ../scss/breakpoints/_768up.scss */
+/* line 118, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li ul,
 .nav li ul.children li ul {
   top: 0;
   left: 100%;
 }
-/* line 124, ../scss/breakpoints/_768up.scss */
+/* line 133, ../scss/breakpoints/_768up.scss */
 .nav li:hover > ul {
   top: auto;
   visibility: visible;
@@ -365,28 +393,28 @@ NAVIGATION STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 144, ../scss/breakpoints/_768up.scss */
+/* line 153, ../scss/breakpoints/_768up.scss */
 .sidebar {
   margin-top: 2.2em;
 }
 
-/* line 148, ../scss/breakpoints/_768up.scss */
+/* line 157, ../scss/breakpoints/_768up.scss */
 .widgettitle {
   border-bottom: 2px solid #444;
   margin-bottom: 0.75em;
 }
 
-/* line 153, ../scss/breakpoints/_768up.scss */
+/* line 162, ../scss/breakpoints/_768up.scss */
 .widget {
   padding: 0 10px;
   margin: 2.2em 0;
 }
-/* line 158, ../scss/breakpoints/_768up.scss */
+/* line 167, ../scss/breakpoints/_768up.scss */
 .widget ul li {
   margin-bottom: 0.75em;
   /* deep nesting */
 }
-/* line 166, ../scss/breakpoints/_768up.scss */
+/* line 175, ../scss/breakpoints/_768up.scss */
 .widget ul li ul {
   margin-top: 0.75em;
   padding-left: 1em;
@@ -403,6 +431,29 @@ SIDEBARS & ASIDES
 /* recent-comments widget */
 /* search widget */
 /* text widget */
+/* line 274, ../scss/breakpoints/_768up.scss */
+.entry-content .main-text-section .icons-holder {
+  right: 50px;
+  top: 20px;
+  margin-left: 0;
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+/* line 282, ../scss/breakpoints/_768up.scss */
+.entry-content .main-text-section .dawn-of-living {
+  left: 117px;
+  top: 140px;
+  width: 585px;
+  padding: 0px;
+}
+/* line 288, ../scss/breakpoints/_768up.scss */
+.entry-content .main-text-section .where-data-isnt {
+  left: 117px;
+  top: 160px;
+  width: 447px;
+}
+
 /*********************
 FOOTER STYLES
 *********************/
@@ -411,7 +462,17 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 274, ../scss/breakpoints/_768up.scss */
+/* line 308, ../scss/breakpoints/_768up.scss */
+.footer .footer-links-wrapper {
+  text-align: left;
+  padding-bottom: 0;
+}
+/* line 312, ../scss/breakpoints/_768up.scss */
+.footer .social-icon {
+  padding: 0px;
+}
+
+/* line 318, ../scss/breakpoints/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.
@@ -421,6 +482,15 @@ mobile. Make sure to double check these!
 }
 
 /* end .footer-links */
+/* line 332, ../scss/breakpoints/_768up.scss */
+.particles-holder-top {
+  height: 740px;
+}
+/* line 334, ../scss/breakpoints/_768up.scss */
+.particles-holder-top .waves-block {
+  height: 740px;
+}
+
 /******************************************************************
 Site Name: RainFocus
 Author: RamirezDev
