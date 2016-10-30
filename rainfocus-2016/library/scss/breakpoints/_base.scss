@@ -210,7 +210,6 @@ and more scalable.
 			keep this file as small as possible!
 			*/
 			&:hover, &:focus {
-
 			}
 		}
 
@@ -326,6 +325,8 @@ POSTS & CONTENT STYLES
 		.entry-content {
 			padding: 0;
 
+
+
 			.ready-to-see {
 				margin-top: 248px;
 				p{
@@ -364,6 +365,7 @@ POSTS & CONTENT STYLES
 			    font-weight: bold;
 			    margin: 0 auto;
 			}
+			
 
 			.waves-block {
 				height: 740px;
@@ -385,6 +387,7 @@ POSTS & CONTENT STYLES
 					    transform: rotate(180deg);
     				}
     				.waves-wrapper {
+    					
     					.w {
 						  position: absolute;
 						  top: 100%;
@@ -392,6 +395,7 @@ POSTS & CONTENT STYLES
 						  right: 0px;
 						  background: url(https://i.koya.io/whitewave2.svg);
 						  background-position: center;
+
 						}
 						.wave {
 						  height: 200px;
@@ -1114,26 +1118,31 @@ FOOTER STYLES
 
 	.demo-button-holder{
 		text-align: center;
+
+
 		.footer-demo-bttn {
 	  
-	  border-radius: 34px;
-	  border: solid 3px $primary-pink;
-      color: #ffffff !important;
+	  	border-radius: 34px;
+	  	border: solid 3px $primary-pink;
+      	color: #ffffff !important;
 		font-size: 12px;
 		font-weight: bold;
 		text-decoration: none;
 		padding: 15px 30px;
 		letter-spacing: 2.4px;
-		
+		display: inline-block;
+		text-align: center;
 	}
 
-	    display: inline-block;
+	    
 	}
 
 	.footer-tag {
 		font-size: 14px;
 		line-height: 26px;
 		color: #9fa3a7;
+		text-align: center;
+		padding:40px;
 	}
 
 	#separator-wrapper {
@@ -1198,4 +1207,128 @@ FOOTER STYLES
 		margin-top: 0 !important;
 		padding:0 !important;
 	}
-	
+
+	.goals-desc {
+				font-size: 16px;
+				line-height: 24px;
+				color:$black;
+				opacity: .5;
+				font-family: $montserrat;
+				margin: 10px 0 40px;
+			}
+
+	.highlight {
+		width: 175px;
+		text-align: center;
+		    margin: 0 auto;
+    position: relative;
+    padding: 30px 0;
+
+		span{
+			display: block;
+		}
+		.improvement {
+			width: 41px;
+		    font-weight: bold;
+  			border-radius: 100px;
+  			text-align: center;
+  			font-size: 14px;
+  			color: $white;
+  			position: absolute;
+		    right: 0px;
+		    top:0;
+		}
+		.numeric-value {
+			font-size: 48px;
+  			font-weight: bold;
+  			color: #212121;
+  			text-align: center;
+  			    line-height: 48px;
+		}
+		.title {
+			font-weight: bold;
+			font-size: 12px;
+			    line-height: 12px;
+			letter-spacing: 2.4px;
+			color: $black;
+			opacity: .5;
+			    margin: 10px;
+			        font-family: 'Montserrat';	
+		}
+		&.one {
+			.improvement {
+				  background-color: #7d3791;
+			}
+		}
+		&.two {
+			.improvement {
+				  background-color: $primary-pink;
+			}
+		}
+		&.three {
+			.improvement {
+				  background-color: #7d3791;
+			}
+		}
+
+	}
+	.demo-copy {
+		width: 414px;
+		font-family: 'Montserrat';
+		line-height: 1.5;
+		font-size: 16px;
+  		color: rgba(0, 0, 0, 0.54);
+  		    margin-bottom: 30px;
+	}		
+	.tel-title {
+		font-family: 'Montserrat';
+	    font-size: 12px;
+	    font-weight: bold;
+	    letter-spacing: 2.4px;
+	    color: rgba(0, 0, 0, 0.38);
+	}
+	.tel {
+		font-size: 14px;
+	    font-weight: bold;
+	    color: #212121;
+	    text-decoration: none;
+	    font-family: 'Montserrat';
+	}
+
+	.form-wrapper {
+		    padding: 65px 0;
+		.nf-form-title, .nf-form-fields-required {
+			display: none;
+		}
+		.nf-field-label {
+			label {
+				font-size: 14px;
+			  line-height: 1.86;
+			  color: #6c6c6c;
+			  font-family: 'Montserrat';
+			}
+		}
+		.ninja-forms-field {
+			height: 46px;
+			color: $black;
+			border-radius: 5px;
+  			background-color: #f6f6f6;
+  			border: solid 1px #dedede;
+		}
+
+		#nf-field-6 {
+			width: 160px;
+			  height: 46px;
+			  border-radius: 100px;
+			  background-color: #e13a5d;
+			  color: $white;
+			      float: right;
+    margin-right: 130px;
+		}
+
+
+
+
+
+
+	}

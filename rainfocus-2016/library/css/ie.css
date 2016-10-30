@@ -341,7 +341,7 @@ NAVIGATION STYLES
 /* line 68, ../scss/breakpoints/_768up.scss */
 .nav li a:hover, .nav li a:focus {
   color: #fff;
-  text-decoration: underline;
+  text-decoration: none;
 }
 /* line 80, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu,
@@ -383,10 +383,25 @@ NAVIGATION STYLES
   top: 0;
   left: 100%;
 }
+/* line 128, ../scss/breakpoints/_768up.scss */
+.nav li ul.sub-menu li.current-menu-item a,
+.nav li ul.sub-menu li.current_page_item a,
+.nav li ul.sub-menu li.current_page_ancestor a,
+.nav li ul.children li.current-menu-item a,
+.nav li ul.children li.current_page_item a,
+.nav li ul.children li.current_page_ancestor a {
+  font-weight: bold;
+}
 /* line 133, ../scss/breakpoints/_768up.scss */
 .nav li:hover > ul {
   top: auto;
   visibility: visible;
+}
+/* line 144, ../scss/breakpoints/_768up.scss */
+.nav li.current-menu-item a,
+.nav li.current_page_item a,
+.nav li.current_page_ancestor a {
+  font-weight: bold;
 }
 
 /* end .nav */
@@ -471,8 +486,17 @@ mobile. Make sure to double check these!
 .footer .social-icon {
   padding: 0px;
 }
-
+/* line 315, ../scss/breakpoints/_768up.scss */
+.footer .demo-button-holder {
+  text-align: left;
+}
 /* line 318, ../scss/breakpoints/_768up.scss */
+.footer .footer-tag {
+  text-align: left;
+  padding: 0;
+}
+
+/* line 325, ../scss/breakpoints/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.
@@ -482,11 +506,11 @@ mobile. Make sure to double check these!
 }
 
 /* end .footer-links */
-/* line 332, ../scss/breakpoints/_768up.scss */
+/* line 339, ../scss/breakpoints/_768up.scss */
 .particles-holder-top {
   height: 740px;
 }
-/* line 334, ../scss/breakpoints/_768up.scss */
+/* line 341, ../scss/breakpoints/_768up.scss */
 .particles-holder-top .waves-block {
   height: 740px;
 }
