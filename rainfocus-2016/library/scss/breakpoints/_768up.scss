@@ -34,7 +34,8 @@ HEADER STYLES
 .header {
 	#inner-header {
 		#header-logo {
-			    position: static;
+			    position: relative;
+			    top: 20px;
     			
 		}
 	}
@@ -66,8 +67,9 @@ NAVIGATION STYLES
 			has the possibility of being a mobile device.
 			*/
 			&:hover, &:focus {
-				color: $white;
+				color: $primary-pink;
 				text-decoration: none;
+				font-weight: bold;
 			}
 		}
 
@@ -272,9 +274,9 @@ SIDEBARS & ASIDES
 .entry-content {
 	.main-text-section {
 		.icons-holder {
-			right: 50px;
+			right: 20px;
     		top: 20px;
-    		margin-left: 0;
+    		margin-left: 60px;
     		-ms-transform: scale(1, 1);
 			-webkit-transform: scale(1, 1);
 			transform: scale(1, 1);
@@ -342,4 +344,36 @@ mobile. Make sure to double check these!
 			height: 740px;
 		}
 	}
+
+.demo-heading {
+		text-align: left !important;
+	}
+
+.demo-copy {
+	max-width: 414px;
+	padding:0;
+	text-align: left !important;
+	}
+
+.tel-title {
+	text-align: left !important;
+}
+.tel { 
+	text-align: left !important; 
+}
+
+.form-wrapper {
+		    padding: 35px 0;
+		    max-width: 100%;
+
+}
+
+.address-block {
+	max-width: 240px;
+	&:last-child {
+    		padding: 0 15px;
+    	}
+
+}
+
 

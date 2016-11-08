@@ -163,13 +163,11 @@ HEADER STYLES
     	margin: 45px auto 0;
     	#header-logo {
     		width: 119px;
-    		height: 36px;
     		background-size:contain;
     		display: inline-block;
     		position: absolute;
     			left: 15px;
-    			top: 60px;
-    		background: url( 'http://www.ramirezdev.com/rainfocus/wp-content/themes/rainfocus-2016/library/images/rainfocus-logo-white.png' );
+    			top: 38px;
     	}
     }
 }
@@ -201,7 +199,7 @@ and more scalable.
 			text-decoration: none;
 			padding: 0 25px;
 			text-transform: uppercase;
-			font-size: 12px;
+			font-size: 14px;
 
 			/*
 			remember this is for mobile ONLY, so there's no need
@@ -210,6 +208,7 @@ and more scalable.
 			keep this file as small as possible!
 			*/
 			&:hover, &:focus {
+
 			}
 		}
 
@@ -364,6 +363,41 @@ POSTS & CONTENT STYLES
 			    padding-top: 15px;
 			    font-weight: bold;
 			    margin: 0 auto;
+
+			    &.hvr-ripple-out {
+					
+					&:hover {
+						color:$white;
+						&::before {
+							border-radius: 34px;
+							border: $white solid 1px;
+						}
+					}	
+			
+					&::before {
+						border-radius: 34px;
+						border: $white solid 1px;
+					}
+			
+				}
+
+			    /* &.hvr-sweep-to-top {
+			    	overflow: hidden;
+					
+					&:hover {
+						color:$black;
+						&::before {
+							border-radius: 34px;
+							background: $primary-pink;
+						}
+					}	
+			
+					&::before {
+						border-radius: 34px;
+						background: $primary-pink;
+					}
+			
+				} */
 			}
 			
 
@@ -480,17 +514,28 @@ POSTS & CONTENT STYLES
 	    				width: 100%;
 	    				.icon {
 	    					position: absolute;
+	    					//transition: all .75s ease-out;
+	    					-webkit-transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  							transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+	    					-webkit-transition-delay: 1s; /* Safari */
+    						transition-delay: 1s;
 	    					&.icon-one {
-	    						left: 70px;
-	    						top:0;
+	    						left: 116px;
+    							top: 35px;
+    							-ms-transform: rotate(27deg);
+								-webkit-transform: rotate(27deg);
+								transform: rotate(27deg);
 	    						img {
 	    							width: 110px;
 	    						}
 
 	    					}
 	    					&.icon-two {
-								left: 297px;
-	    						top: 48px;
+								left: 263px;
+    							top: 66px;
+    							-ms-transform: rotate(-31deg);
+								-webkit-transform: rotate(-31deg);
+								transform: rotate(-31deg);
 	    						img {
 	    							width: 81px;
 	    						}
@@ -498,39 +543,102 @@ POSTS & CONTENT STYLES
 	    					}
 	    					&.icon-three {
 
-							    left: 172px;
-							    top: 195px;
+							    left: 229px;
+								top: 180px;
+								-ms-transform: rotate(31deg);
+								-webkit-transform: rotate(31deg);
+								transform: rotate(31deg);
 							    img {
 							    	width: 98px;
 							    }
 	    						
 	    					}
 	    					&.icon-four {
-	    						left: 0;
-	    						top: 319px;
+	    						left: 90px;
+    							top: 283px;
+    							-ms-transform: rotate(31deg);
+								-webkit-transform: rotate(31deg);
+								transform: rotate(31deg);
 	    						img {
 	    							width: 67px;
 	    						}
 	    						
 	    					}
 	    					&.icon-five {
-	    						top:350px;
-	    						left: 163px;
+    						    top: 287px;
+    							left: 206px;
+    							-ms-transform: rotate(-31deg);
+								-webkit-transform: rotate(-31deg);
+								transform: rotate(-31deg);
 	    						img {
 	    							width: 113px;
 	    						}
 	    						
 	    					}
 	    					&.icon-six {
-	    						right:0;
-	    						top:300px;
+    						    right: -30px;
+    							top: 258px;
+    							-ms-transform: rotate(-31deg);
+								-webkit-transform: rotate(-31deg);
+								transform: rotate(-31deg);
 	    						img {
 	    							width: 103px;
 	    						}
 	    					}
 	    				}
 	    			}
+	    			&.in-view {
+		    			.icons-wrapper {
+		    				.icon {
+
+		    					&.icon-one {
+		    						left: 70px;
+	    							top:0;
+	    							-ms-transform: rotate(0deg);
+								    -webkit-transform: rotate(0deg);
+								    transform: rotate(0deg);
+		    					}
+		    					&.icon-two {
+									left: 297px;
+	    							top: 48px;
+	    							-ms-transform: rotate(0deg);
+								    -webkit-transform: rotate(0deg);
+								    transform: rotate(0deg);
+	    						}
+	    						&.icon-three {
+									left: 172px;
+							    	top: 195px;
+							    	-ms-transform: rotate(0deg);
+								    -webkit-transform: rotate(0deg);
+								    transform: rotate(0deg);
+	    						}
+	    						&.icon-four {
+									left: 0;
+	    							top: 319px;
+	    							-ms-transform: rotate(0deg);
+								    -webkit-transform: rotate(0deg);
+								    transform: rotate(0deg);
+	    						}
+	    						&.icon-five {
+									top:350px;
+	    							left: 163px;
+	    							-ms-transform: rotate(0deg);
+								    -webkit-transform: rotate(0deg);
+								    transform: rotate(0deg);
+	    						}
+	    						&.icon-six {
+									right:0;
+	    							top:300px;
+	    							-ms-transform: rotate(0deg);
+								    -webkit-transform: rotate(0deg);
+								    transform: rotate(0deg);
+	    						}
+		    				}
+		    			}
+	    			}
 	    		}
+
+
     		}
 
 
@@ -1092,6 +1200,8 @@ FOOTER STYLES
 		padding:20px;
 	}
 
+	
+
 	.footer-links-wrapper {
 	    text-align: center;
 		padding-bottom: 30px;
@@ -1132,6 +1242,20 @@ FOOTER STYLES
 		letter-spacing: 2.4px;
 		display: inline-block;
 		text-align: center;
+
+		&.hvr-radial-out {
+			background: $footer-bkg-color;
+			&:hover {
+				&::before {
+					background: $primary-pink;
+				}
+			}
+			
+			&::before {
+				background: $primary-pink;
+			}
+			
+		}
 	}
 
 	    
@@ -1272,31 +1396,57 @@ FOOTER STYLES
 		}
 
 	}
+	.demo-heading {
+		width: 100%;
+		text-align: center !important;
+	}
 	.demo-copy {
-		width: 414px;
+		padding: 0 30px;
+		width: 100%;
 		font-family: 'Montserrat';
 		line-height: 1.5;
 		font-size: 16px;
   		color: rgba(0, 0, 0, 0.54);
   		    margin-bottom: 30px;
+  		    text-align: center !important;
 	}		
-	.tel-title {
-		font-family: 'Montserrat';
+	.tel {
+		font-family: 'Montserrat-Light';
 	    font-size: 12px;
-	    font-weight: bold;
+	    font-weight: normal;
 	    letter-spacing: 2.4px;
 	    color: rgba(0, 0, 0, 0.38);
+	    text-align: center !important;
+	    width: 100%;
+	    text-decoration: none;
+	    display: block;
 	}
-	.tel {
+	.tel-title {
 		font-size: 14px;
 	    font-weight: bold;
-	    color: #212121;
-	    text-decoration: none;
+	    color: rgba(51, 51, 51, 0.87);
+	    
 	    font-family: 'Montserrat';
+	    text-align: center !important;
+	    width: 100%;
+	    display: block;
+	}
+
+	.address-block {
+	    width: 50%;
+    	float: left;
+    	 padding:0;
+    	&:first-child {
+    		border-right: 1px solid #ccc;
+    		width: 50%;
+    	}
+    	
 	}
 
 	.form-wrapper {
-		    padding: 65px 0;
+		    padding: 65px;
+		    max-width: 500px;
+    margin: 0 auto;
 		.nf-form-title, .nf-form-fields-required {
 			display: none;
 		}
@@ -1310,25 +1460,78 @@ FOOTER STYLES
 		}
 		.ninja-forms-field {
 			height: 46px;
+			    max-width: 100%;
 			color: $black;
 			border-radius: 5px;
   			background-color: #f6f6f6;
   			border: solid 1px #dedede;
 		}
 
-		#nf-field-6 {
-			width: 160px;
-			  height: 46px;
-			  border-radius: 100px;
-			  background-color: #e13a5d;
-			  color: $white;
-			      float: right;
-    margin-right: 130px;
+		.nf-response-msg {
+			    color: black;
+    text-align: center;
+    font-size: 19px;
 		}
 
+		#nf-field-6, #nf-field-10 {
+			width: 234px;
+			  height: 48px;
+			  border-radius: 100px;
+			  color: $white;
+			  font-family: 'Montserrat';
+			  text-transform: uppercase;
+			  font-size: 12px;
+  			 font-weight: bold;
+  			     background-image: linear-gradient(281deg, rgb(125, 55, 145), rgb(174, 56, 120) 49%, rgb(225, 58, 93));
+
+		}
+
+	}
 
 
+	#footer-svg-logo {
+		    width: 157px;
+    display: inline-block;
+	}
 
+	#hero-demo-bttn {
+		&:hover {
+				color:$white !important;
+			}
 
+		&.hvr-ripple-out {
+					
+			&:hover {
+				color:$white;
+				&::before {
+					border-radius: 34px;
+					border: $white solid 1px;
+				}
+			}	
+	
+			&::before {
+				border-radius: 34px;
+				border: $white solid 1px;
+			}
+			
+		}
+
+		/* &.hvr-sweep-to-top {
+			overflow: hidden;
+
+			background: $footer-bkg-color;
+			&:hover {
+				&::before {
+					border-radius: 34px;
+					background: $primary-pink;
+				}
+			}	
+			
+			&::before {
+				border-radius: 34px;
+				background: $primary-pink;
+			}
+			
+		} */
 
 	}

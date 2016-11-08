@@ -46,11 +46,75 @@ function loadGravatars() {
 */
 jQuery(document).ready(function($) {
 
+  var options = {
+    useEasing : true, 
+    useGrouping : true, 
+    separator : ',', 
+    decimal : '.', 
+    prefix : '', 
+    suffix : '' 
+  };
+
+
   /*
    * Let's fire off the gravatar function
    * You can remove this if you don't need it
   */
   loadGravatars();
+  var $icons;
+  var $highlightsWrapper;
+  var isHome = false;
+  var isProduct = false;
+  var highlightOne;
+  var highlightTwo;
+  var highlightThree;
+
+  if ($('body').hasClass('home') ) {
+    $icons = $('.icons-holder');
+    isHome = true;
+  }
+
+  if ($('body').hasClass('page-id-45') ) {
+    $highlightsWrapper = $('#highlights-wrapper');
+    highlightOne = new CountUp("counter-one", 0, 220, 0, 2.5, options);
+    highlightTwo = new CountUp("counter-two", 0, 102, 0, 2.5, options);
+    highlightThree = new CountUp("counter-three", 0, 58, 0, 2.5, options);
+    isProduct = true;
+  }
+
+  
+
+  $(window).scroll(function() {
+
+    if ( isHome ) {
+
+      if ( $icons.is( ':in-viewport' ) ) {
+        $icons.addClass('in-view');
+      }
+
+    }
+    
+
+    if ( isProduct ) {
+
+      if ( $highlightsWrapper.is( ':in-viewport' ) ) {
+
+        setTimeout(function(){
+          highlightOne.start();
+          highlightTwo.start();
+          highlightThree.start();
+        }, 250)
+      
+      }
+
+    }
+
+
+    
+
+  });
+  
+
 
 
 }); /* end of as page load scripts */
