@@ -200,6 +200,7 @@ and more scalable.
 			padding: 0 25px;
 			text-transform: uppercase;
 			font-size: 14px;
+			letter-spacing: 2.8px;
 
 			/*
 			remember this is for mobile ONLY, so there's no need
@@ -1243,7 +1244,24 @@ FOOTER STYLES
 		display: inline-block;
 		text-align: center;
 
-		&.hvr-radial-out {
+		&.hvr-ripple-out {
+					
+			&:hover {
+				color:$white;
+				&::before {
+					border-radius: 34px;
+					border: $white solid 1px;
+				}
+			}	
+	
+			&::before {
+				border-radius: 34px;
+				border: none;
+			}
+			
+		}
+
+		/* &.hvr-radial-out {
 			background: $footer-bkg-color;
 			&:hover {
 				&::before {
@@ -1255,7 +1273,7 @@ FOOTER STYLES
 				background: $primary-pink;
 			}
 			
-		}
+		} */
 	}
 
 	    
@@ -1491,7 +1509,8 @@ FOOTER STYLES
 
 	#footer-svg-logo {
 		    width: 157px;
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
 	}
 
 	#hero-demo-bttn {

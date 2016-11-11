@@ -46,6 +46,8 @@ function loadGravatars() {
 */
 jQuery(document).ready(function($) {
 
+  $('#menu-main-menu').find('a').addClass('hvr-underline-from-center');
+
   var options = {
     useEasing : true, 
     useGrouping : true, 
