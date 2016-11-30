@@ -78,9 +78,9 @@ jQuery(document).ready(function($) {
 
   if ($('body').hasClass('page-id-45') ) {
     $highlightsWrapper = $('#highlights-wrapper');
-    highlightOne = new CountUp("counter-one", 0, 220, 0, 2.5, options);
-    highlightTwo = new CountUp("counter-two", 0, 102, 0, 2.5, options);
-    highlightThree = new CountUp("counter-three", 0, 58, 0, 2.5, options);
+    highlightOne = new CountUp("counter-one", 0, 27315, 0, 2.5, options);
+    highlightTwo = new CountUp("counter-two", 0, 1632, 0, 2.5, options);
+    highlightThree = new CountUp("counter-three", 0, 171, 0, 2.5, options);
     isProduct = true;
   }
 

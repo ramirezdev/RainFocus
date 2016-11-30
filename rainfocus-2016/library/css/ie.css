@@ -78,8 +78,8 @@ FONT FACE (IN YOUR FACE)
 */
 @font-face {
   font-family: 'Montserrat-Light';
-  src: url("http://www.ramirezdev.com/rainfocus/wp-content/themes/rainfocus-2016/library/fonts/Montserrat-Light.eot");
-  src: url("http://www.ramirezdev.com/rainfocus/wp-content/themes/rainfocus-2016/library/fonts/Montserrat-Light.eot?#iefix") format("embedded-opentype"), url("http://www.ramirezdev.com/rainfocus/wp-content/themes/rainfocus-2016/library/fonts/Montserrat-Light.woff") format("woff"), url("http://www.ramirezdev.com/rainfocus/wp-content/themes/rainfocus-2016/library/fonts/Montserrat-Light.ttf") format("truetype"), url("http://www.ramirezdev.com/rainfocus/wp-content/themes/rainfocus-2016/library/fonts/Montserrat-Light.svg#Montserrat-Light") format("svg");
+  src: url("http://69.195.124.106/~rainfocu/wp-content/themes/rainfocus-2016/library/fonts/Montserrat-Light.eot");
+  src: url("http://69.195.124.106/~rainfocu/wp-content/themes/rainfocus-2016/library/fonts/Montserrat-Light.eot?#iefix") format("embedded-opentype"), url("http://69.195.124.106/~rainfocu/wp-content/themes/rainfocus-2016/library/fonts/Montserrat-Light.woff") format("woff"), url("http://69.195.124.106/~rainfocu/wp-content/themes/rainfocus-2016/library/fonts/Montserrat-Light.ttf") format("truetype"), url("http://69.195.124.106/~rainfocu/wp-content/themes/rainfocus-2016/library/fonts/Montserrat-Light.svg#Montserrat-Light") format("svg");
   font-weight: 300;
   font-style: normal;
 }
@@ -350,15 +350,15 @@ NAVIGATION STYLES
 .nav li a.hvr-underline-from-center:hover::before {
   background: #fff;
   height: 1px;
-  bottom: -15px;
+  bottom: -22px;
 }
-/* line 84, ../scss/breakpoints/_768up.scss */
+/* line 85, ../scss/breakpoints/_768up.scss */
 .nav li a.hvr-underline-from-center::before {
   background: #fff;
   height: 1px;
-  bottom: -15px;
+  bottom: -22px;
 }
-/* line 99, ../scss/breakpoints/_768up.scss */
+/* line 101, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu,
 .nav li ul.children {
   margin-top: 0;
@@ -369,7 +369,7 @@ NAVIGATION STYLES
   z-index: 8999;
   /* highlight sub-menu current page */
 }
-/* line 108, ../scss/breakpoints/_768up.scss */
+/* line 110, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li,
 .nav li ul.children li {
   /*
@@ -378,7 +378,7 @@ NAVIGATION STYLES
   for usability. k, bai.
   */
 }
-/* line 110, ../scss/breakpoints/_768up.scss */
+/* line 112, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li a,
 .nav li ul.children li a {
   padding-left: 10px;
@@ -387,18 +387,18 @@ NAVIGATION STYLES
   width: 180px;
   border-bottom: 1px solid #ccc;
 }
-/* line 127, ../scss/breakpoints/_768up.scss */
+/* line 129, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li:last-child a,
 .nav li ul.children li:last-child a {
   border-bottom: 0;
 }
-/* line 137, ../scss/breakpoints/_768up.scss */
+/* line 139, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li ul,
 .nav li ul.children li ul {
   top: 0;
   left: 100%;
 }
-/* line 147, ../scss/breakpoints/_768up.scss */
+/* line 149, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li.current-menu-item a,
 .nav li ul.sub-menu li.current_page_item a,
 .nav li ul.sub-menu li.current_page_ancestor a,
@@ -407,12 +407,12 @@ NAVIGATION STYLES
 .nav li ul.children li.current_page_ancestor a {
   font-weight: bold;
 }
-/* line 152, ../scss/breakpoints/_768up.scss */
+/* line 154, ../scss/breakpoints/_768up.scss */
 .nav li:hover > ul {
   top: auto;
   visibility: visible;
 }
-/* line 163, ../scss/breakpoints/_768up.scss */
+/* line 165, ../scss/breakpoints/_768up.scss */
 .nav li.current-menu-item a,
 .nav li.current_page_item a,
 .nav li.current_page_ancestor a {
@@ -423,28 +423,28 @@ NAVIGATION STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 172, ../scss/breakpoints/_768up.scss */
+/* line 174, ../scss/breakpoints/_768up.scss */
 .sidebar {
   margin-top: 2.2em;
 }
 
-/* line 176, ../scss/breakpoints/_768up.scss */
+/* line 178, ../scss/breakpoints/_768up.scss */
 .widgettitle {
   border-bottom: 2px solid #444;
   margin-bottom: 0.75em;
 }
 
-/* line 181, ../scss/breakpoints/_768up.scss */
+/* line 183, ../scss/breakpoints/_768up.scss */
 .widget {
   padding: 0 10px;
   margin: 2.2em 0;
 }
-/* line 186, ../scss/breakpoints/_768up.scss */
+/* line 188, ../scss/breakpoints/_768up.scss */
 .widget ul li {
   margin-bottom: 0.75em;
   /* deep nesting */
 }
-/* line 194, ../scss/breakpoints/_768up.scss */
+/* line 196, ../scss/breakpoints/_768up.scss */
 .widget ul li ul {
   margin-top: 0.75em;
   padding-left: 1em;
@@ -461,7 +461,7 @@ SIDEBARS & ASIDES
 /* recent-comments widget */
 /* search widget */
 /* text widget */
-/* line 293, ../scss/breakpoints/_768up.scss */
+/* line 295, ../scss/breakpoints/_768up.scss */
 .entry-content .main-text-section .icons-holder {
   right: 20px;
   top: 20px;
@@ -470,14 +470,14 @@ SIDEBARS & ASIDES
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
 }
-/* line 301, ../scss/breakpoints/_768up.scss */
+/* line 303, ../scss/breakpoints/_768up.scss */
 .entry-content .main-text-section .dawn-of-living {
   left: 117px;
   top: 140px;
   width: 585px;
   padding: 0px;
 }
-/* line 307, ../scss/breakpoints/_768up.scss */
+/* line 309, ../scss/breakpoints/_768up.scss */
 .entry-content .main-text-section .where-data-isnt {
   left: 117px;
   top: 160px;
@@ -492,26 +492,26 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 327, ../scss/breakpoints/_768up.scss */
+/* line 329, ../scss/breakpoints/_768up.scss */
 .footer .footer-links-wrapper {
   text-align: left;
   padding-bottom: 0;
 }
-/* line 331, ../scss/breakpoints/_768up.scss */
+/* line 333, ../scss/breakpoints/_768up.scss */
 .footer .social-icon {
   padding: 0px;
 }
-/* line 334, ../scss/breakpoints/_768up.scss */
+/* line 336, ../scss/breakpoints/_768up.scss */
 .footer .demo-button-holder {
   text-align: left;
 }
-/* line 337, ../scss/breakpoints/_768up.scss */
+/* line 339, ../scss/breakpoints/_768up.scss */
 .footer .footer-tag {
   text-align: left;
   padding: 0;
 }
 
-/* line 344, ../scss/breakpoints/_768up.scss */
+/* line 346, ../scss/breakpoints/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.
@@ -521,48 +521,48 @@ mobile. Make sure to double check these!
 }
 
 /* end .footer-links */
-/* line 358, ../scss/breakpoints/_768up.scss */
+/* line 360, ../scss/breakpoints/_768up.scss */
 .particles-holder-top {
   height: 740px;
 }
-/* line 360, ../scss/breakpoints/_768up.scss */
+/* line 362, ../scss/breakpoints/_768up.scss */
 .particles-holder-top .waves-block {
   height: 740px;
 }
 
-/* line 365, ../scss/breakpoints/_768up.scss */
+/* line 367, ../scss/breakpoints/_768up.scss */
 .demo-heading {
   text-align: left !important;
 }
 
-/* line 369, ../scss/breakpoints/_768up.scss */
+/* line 371, ../scss/breakpoints/_768up.scss */
 .demo-copy {
   max-width: 414px;
   padding: 0;
   text-align: left !important;
 }
 
-/* line 375, ../scss/breakpoints/_768up.scss */
+/* line 377, ../scss/breakpoints/_768up.scss */
 .tel-title {
   text-align: left !important;
 }
 
-/* line 378, ../scss/breakpoints/_768up.scss */
+/* line 380, ../scss/breakpoints/_768up.scss */
 .tel {
   text-align: left !important;
 }
 
-/* line 382, ../scss/breakpoints/_768up.scss */
+/* line 384, ../scss/breakpoints/_768up.scss */
 .form-wrapper {
   padding: 35px 0;
   max-width: 100%;
 }
 
-/* line 388, ../scss/breakpoints/_768up.scss */
+/* line 390, ../scss/breakpoints/_768up.scss */
 .address-block {
   max-width: 240px;
 }
-/* line 390, ../scss/breakpoints/_768up.scss */
+/* line 392, ../scss/breakpoints/_768up.scss */
 .address-block:last-child {
   padding: 0 15px;
 }
