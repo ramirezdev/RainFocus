@@ -130,11 +130,24 @@ function bones_scripts_and_styles() {
 		// modernizr (without media query polyfill)
 		wp_register_script( 'bones-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
 
-		// in viewport
-		wp_register_script( 'in-view', get_stylesheet_directory_uri() . '/library/js/libs/isInViewport.min.js', array( 'jquery' ), '', false );
-
 		// count up
 		wp_register_script( 'count-up', get_stylesheet_directory_uri() . '/library/js/libs/countUp.min.js', array( 'jquery' ), '', false );
+
+		// code prism
+		wp_register_script( 'prism',  get_stylesheet_directory_uri() . '/library/js/libs/prism.js', array(), '', false );
+
+		// code editor
+		wp_register_script( 'codeflask', 'https://cdnjs.cloudflare.com/ajax/libs/CodeFlask.js/0.1.1/codeflask.min.js', array(), '', false );
+
+
+		// in viewport
+		wp_register_script( 'in-view', get_stylesheet_directory_uri() . '/library/js/libs/isInViewport.min.js', array( 'jquery' ), '', false );
+		
+		// register prism
+		wp_register_style( 'prism-stylesheet', get_stylesheet_directory_uri() . '/library/css/prism.css', array(), '', 'all' );
+
+		// register prism
+		wp_register_style( 'codeflask-stylesheet', get_stylesheet_directory_uri() . '/library/css/codeflask.css', array(), '', 'all' );
 		
 		// register main stylesheet
 		wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
@@ -153,6 +166,8 @@ function bones_scripts_and_styles() {
 		// enqueue styles and scripts
 		wp_enqueue_script( 'bones-modernizr' );
 		wp_enqueue_style( 'google-fonts' );
+		wp_enqueue_style( 'prism-stylesheet' );
+		wp_enqueue_style( 'codeflask-stylesheet' );
 		wp_enqueue_style( 'bones-stylesheet' );
 		wp_enqueue_style( 'bones-ie-only' );
 
@@ -164,8 +179,10 @@ function bones_scripts_and_styles() {
 		and your site will load faster.
 		*/
 		wp_enqueue_script( 'jquery' );
-		wp_enqueue_script( 'in-view' );
+		wp_enqueue_script( 'prism' );
+		wp_enqueue_script( 'codeflask' );
 		wp_enqueue_script( 'count-up' );
+		wp_enqueue_script( 'in-view' );
 		wp_enqueue_script( 'bones-js' );
 
 	}
